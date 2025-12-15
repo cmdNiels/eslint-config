@@ -1,0 +1,59 @@
+{
+	"version": "1.0.0",
+	"name": "@cmdniels/eslint-config",
+	"description": "Opinionated ESLint configs for TypeScript and web (React/Next.js/Tailwind) projects",
+	"homepage": "https://github.com/cmdniels/eslint-config",
+	"keywords": [
+		"eslint",
+		"eslint-config",
+		"prettier"
+	],
+	"author": "cmdNiels",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		"./ts": "./ts.eslint.config.mjs",
+		"./web": "./web.eslint.config.mjs",
+		"./prettier": "./prettier.config.mjs"
+	},
+	"files": [
+		"ts.eslint.config.mjs",
+		"web.eslint.config.mjs",
+		"prettier.config.mjs"
+	],
+	"scripts": {
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"fix": "pnpm lint:fix && pnpm format"
+	},
+	"dependencies": {
+		"@dword-design/eslint-plugin-import-alias": "^6.0.3",
+		"@next/eslint-plugin-next": "^16.0.7",
+		"@typescript-eslint/eslint-plugin": "^8.48.1",
+		"@typescript-eslint/parser": "^8.48.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-better-tailwindcss": "^3.8.0",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-unused-imports": "^4.3.0"
+	},
+	"peerDependencies": {
+		"eslint": "^9.0.0",
+		"prettier": "^3.0.0",
+		"typescript": "^5.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cmdniels/eslint-config.git"
+	},
+	"packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
+	"devDependencies": {
+		"eslint": "^9.18.0",
+		"prettier": "^3.7.4",
+		"typescript": "^5.7.3"
+	}
+}
