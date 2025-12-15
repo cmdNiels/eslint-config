@@ -11,6 +11,7 @@
 	"author": "cmdNiels",
 	"license": "MIT",
 	"type": "module",
+	"private": false,
 	"exports": {
 		"./ts": "./ts.eslint.config.mjs",
 		"./web": "./web.eslint.config.mjs",
