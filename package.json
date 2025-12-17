@@ -1,5 +1,5 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"name": "@cmdniels/eslint-config",
 	"description": "Opinionated ESLint configs for TypeScript and web (React/Next.js/Tailwind) projects",
 	"homepage": "https://github.com/cmdniels/eslint-config",
