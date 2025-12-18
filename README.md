@@ -7,7 +7,14 @@ Opinionated ESLint configurations for TypeScript and web (React/Next.js/Tailwind
 Install the package and its peer dependencies:
 
 ```bash
-pnpm add -D @cmdniels/eslint-config
+# pnpm
+pnpm add -D @cmdniels/eslint-config eslint prettier typescript
+
+# npm
+npm install -D @cmdniels/eslint-config eslint prettier typescript
+
+# yarn
+yarn add -D @cmdniels/eslint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -77,6 +84,22 @@ export default defineConfig([
 ### TypeScript Configuration
 
 Make sure you have a `tsconfig.json` in your project root. The ESLint config expects it to be there for type-aware linting.
+
+**Important:** This config enforces `@` import aliases. You must configure path mapping in your `tsconfig.json`:
+
+```json
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"]
+		}
+		// ... other options
+	}
+}
+```
+
+This allows you to import modules like `import { foo } from "@/lib/utils"` instead of relative paths like `"../../lib/utils"`.
 
 ### Prettier Configuration
 
