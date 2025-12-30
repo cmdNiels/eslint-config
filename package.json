@@ -1,5 +1,5 @@
 {
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"name": "@cmdniels/eslint-config",
 	"description": "Opinionated ESLint configs for TypeScript and web (React/Next.js/Tailwind) projects",
 	"homepage": "https://github.com/cmdniels/eslint-config",
@@ -15,11 +15,13 @@
 	"exports": {
 		"./ts": "./ts.eslint.config.mjs",
 		"./web": "./web.eslint.config.mjs",
+		"./expo": "./expo.eslint.config.mjs",
 		"./prettier": "./prettier.config.mjs"
 	},
 	"files": [
 		"ts.eslint.config.mjs",
 		"web.eslint.config.mjs",
+		"expo.eslint.config.mjs",
 		"prettier.config.mjs"
 	],
 	"scripts": {
@@ -38,8 +40,10 @@
 		"eslint-import-resolver-typescript": "^4.4.4",
 		"eslint-plugin-better-tailwindcss": "^3.8.0",
 		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
 		"eslint-plugin-react": "^7.37.5",
 		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-native": "^5.0.0",
 		"eslint-plugin-unused-imports": "^4.3.0"
 	},
 	"peerDependencies": {
