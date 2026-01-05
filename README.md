@@ -7,14 +7,11 @@ Opinionated ESLint configurations for TypeScript and web (React/Next.js/Tailwind
 Install the package and its peer dependencies:
 
 ```bash
-# pnpm
-pnpm add -D @cmdniels/eslint-config eslint prettier typescript
-
 # npm
 npm install -D @cmdniels/eslint-config eslint prettier typescript
 
-# yarn
-yarn add -D @cmdniels/eslint-config eslint prettier typescript
+# bun
+bun install --dev @cmdniels/eslint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -119,16 +116,16 @@ Add these scripts to your `package.json`:
 	"scripts": {
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
-		"format": "prettier --write .",
-		"format:check": "prettier --check .",
-		"fix": "pnpm lint:fix && pnpm format"
+		"format": "prettier --write . --log-level warn --cache --cache-location node_modules/.cache/prettier/.prettier-cache",
+		"format:check": "prettier --check . --log-level warn --cache --cache-location node_modules/.cache/prettier/.prettier-cache",
+		"fix": "bun lint:fix && bun format"
 	}
 }
 ```
 
 **Recommended workflow:**
 
-- `pnpm fix` - Fix all linting and formatting issues in one command
+- `bun fix` - Fix all linting and formatting issues in one command
 
 ## Ignored Files
 

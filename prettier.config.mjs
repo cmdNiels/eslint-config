@@ -1,4 +1,5 @@
 // @ts-check
+import { fileURLToPath } from "node:url";
 
 /** @type {import("prettier").Config} */
 export default {
@@ -11,4 +12,5 @@ export default {
 	endOfLine: "auto",
 	semi: true,
 	trailingComma: "es5",
+	plugins: [fileURLToPath(import.meta.resolve("prettier-plugin-packagejson"))],
 };
