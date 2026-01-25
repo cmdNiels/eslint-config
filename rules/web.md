@@ -1,0 +1,14 @@
+- Prefix event handlers with "handle" (handlePress, handleSubmit)
+- Use PascalCase for components and their file names
+- Do not make IProps interfaces, inline the type definition in the function declaration.
+- For components that will not be reused, create a ./\_components/ directory next to the page.
+- Use Tailwind v4 classes for styling.
+- Always use the cn() utility instead of string interpolation.
+- Always perfer flexbox over grid.
+- Always use gap-_ instead of space-_ classes.
+- No `eval`, `innerHTML`, or script injection patterns
+- Use React hooks properly; exhaustive-deps is enforced
+
+- Use `@cmdniels/uikit` for reusable components (shadcn/baseui based library)
+- Import components directly: `import { Button, Input, Dialog } from "@cmdniels/uikit"`
+- Common components available: Button, Input, Textarea, Select, Checkbox, Label, Dialog, AlertDialog, DatePicker, FileDropzone, LinkInput, Badge, Error, Toaster

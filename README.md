@@ -143,6 +143,22 @@ The following files and directories are automatically ignored:
 
 Config files are ignored because they often aren't included in `tsconfig.json` and would cause TypeScript parser errors.
 
+## OpenCode Integration
+
+This package includes custom coding rules for [OpenCode](https://opencode.ai). The rules are automatically applied when OpenCode detects the `opencode.jsonc` configuration file:
+
+```jsonc
+{
+	"$schema": "https://opencode.ai/config.json",
+	"instructions": [
+		"https://raw.githubusercontent.com/cmdNiels/eslint-config/main/rules/default.md",
+		"https://raw.githubusercontent.com/cmdNiels/eslint-config/main/rules/ts.md",
+		"https://raw.githubusercontent.com/cmdNiels/eslint-config/main/rules/web.md",
+		"https://raw.githubusercontent.com/cmdNiels/eslint-config/main/rules/expo.md",
+	],
+}
+```
+
 ## License
 
 MIT
