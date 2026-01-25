@@ -1,0 +1,25 @@
+- NEVER run builds autonomously - builds (especially `bun build:app`, `bun build:android`, `bun build:ios`) take a long time and cost money. Only run builds when explicitly requested by the user.
+- Use React Context for global config and theming
+- Keep local state minimal and scoped
+- Use `useTranslation` hook from react-i18next in components
+- Use functional components and hooks only
+- Separate UI components, screens, and logic modules
+- Prefer composition over inheritance
+- Use Expo Router (file-based routing) with type-safe params
+- Stack + bottom tabs with React Navigation
+- Use RevenueCat for cross-platform IAP (iOS/Android)
+- Use Vercel AI SDK (`ai` package) for AI streaming
+
+- ALWAYS use HeroUI Native components for UI elements (`heroui-native`) - avoid creating custom UI components
+- Follow HeroUI Native's compound component patterns (e.g., `Button.Label`, `Card.Header`)
+- Use HeroUI Native's built-in variants, sizes, and color schemes
+- Text in buttons must be wrapped with `<Text />` component or use HeroUI Native's `Button.Label`
+- Use uniwind for styling (Tailwind for React Native)
+- Implement `className` props with `cn()` utility function
+- ALWAYS use flexbox with `gap` for spacing - avoid manual margins (`margin`, `mx-`, `my-`, `mt-`, `mb-`, `ml-`, `mr-`)
+- Use `gap`, `gap-x`, `gap-y` utility classes for consistent spacing between elements
+- Prefer flexbox layout patterns (`flex-row`, `flex-col`, `items-center`, `justify-between`, etc.)
+- Access theme colors via `useThemeColor` hook from HeroUI Native
+- Use HeroUI Native's color system (CSS variables like `--accent`, `--foreground`, etc.)
+- Follow HeroUI Native's animation patterns and configuration
+- Use react-native-reanimated for custom animations (HeroUI Native is built on it)
