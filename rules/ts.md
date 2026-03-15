@@ -3,22 +3,32 @@
 - Implement early returns for better readability
 - Ignore all eslint related warnings as these will get fixed on save from the user
 
-- Prefer interfaces over types for object shapes
-- Reusable types should be stored in the correct place inside of @/types
-- Avoid enums; use const objects/maps instead
-- Use `satisfies` operator for type validation
-- No explicit `any`; use `unknown` if necessary with proper narrowing
-- Use the nullish coalescing operator (??) instead of logical OR (||)
-
+- Dont use dynamic imports.
 - Remove unused imports automatically
 - Enforce `@/` alias for imports from root
 - Enforce one default export per file
-- Enfore a single function per file
+- Never include multiple exports in a file
+- Enforce a single function per file
+- Reusable types should be placed as default exports inside of @/types
+- Constants should always be placed in @/lib/constants.ts
+- For console apps with state use @/lib/state.ts with a object default export
+- Enforce a single IType per IType.ts in @/types
+- Dont use or create a @/src directory use @/lib
+- Never make new root directories.
 
+- Files should always have the same name as the default export
 - Use descriptive names with auxiliary verbs (isLoading, hasError)
-- Use lowercase with dashes for directories (components/onboarding)
+- Use lowercase for directories (lib/feature/defaultExport.ts)
 - Use IPascalCase for types and interfaces and their file names
 - Use camelCase for variables, functions, and methods
 - Use UPPER_SNAKE_CASE for constants
 - Always prefix interfaces with I (e.g. IConfig)
 - Double quotes, no template literals for static strings
+
+- Prefer interfaces over types for object shapes
+- Avoid enums; use const objects/maps instead
+- Use `satisfies` operator for type validation
+- No explicit `any`; use `unknown` if necessary with proper narrowing
+- Use the nullish coalescing operator (??) instead of logical OR (||)
+- Never use classes.
+- Always add types to callback parameters (void(param1, (param: IType) => {}))
