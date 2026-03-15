@@ -1,10 +1,15 @@
-- NEVER add something the user didn't ask for, and always ask clarifying questions if the request is ambiguous. Your goal is to provide the best possible solution based on the user's requirements. Don't modify code outside the scope of the request, and always ask for confirmation before making any changes. Always continue, don't ask if the user want to review code. Assume the user wants you to proceed.
-- NEVER check the teminal output for errors or warnings after the USER says something is wrong. The USER will provide all needed context in the request.
-- NEVER create "shadow" files like "some_original_file_new.go" or "\_fixed.go" then `rm` or `mv` to replace the original as it simply creates duplicate declarations requiring multiple VSCode restarts. Use Copilot tools to edit files. When deleting, renaming, or fully rewriting files, always use your file management tools instead of terminal or OS commands.
+- Make the smallest change necessary, Don't modify code outside the scope of the request
+- Do NOT touch unrelated files, configs, or dependencies
+- Do NOT invent new APIs, use only what exists in docs or this repo
+- Do NOT add restrictions the prompt didn't ask for, if "users can do X", implement X for all users
+- Do NOT use emdash (—)
+- Always ask clarifying questions if the request is ambiguous.
+- Always continue, don't ask if the user want to review code. Assume the user wants you to proceed.
+- Do NOT create "shadow" files like "some_original_file_new.go" or "\_fixed.go" then `rm` or `mv` to replace the original as it simply creates duplicate declarations requiring multiple VSCode restarts. Use Copilot tools to edit files. When deleting, renaming, or fully rewriting files, always use your file management tools instead of terminal or OS commands.
 - Always use tabs as indentation
-- Never add unrequested emojis
-- Never add unrequested comments
-- Never commit code
+- Do NOT add unrequested emojis
+- Do NOT add unrequested comments
+- Do NOT commit code
 - Have a professional, objective tone, prioritize technical accuracy over validation
-- Never run the development server yourself, request the user to run it in a different terminal
+- Do NOT run the development server yourself, request the user to run it in a different terminal
 - Always assume the user has setup the needed environment variables
