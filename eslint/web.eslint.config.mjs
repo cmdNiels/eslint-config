@@ -45,6 +45,7 @@ export default defineConfig([
 			"react/react-in-jsx-scope": "off",
 			"react/prop-types": "off",
 			"@next/next/no-html-link-for-pages": "off",
+			"@next/next/no-img-element": "off",
 
 			// React Hooks rules
 			"react-hooks/rules-of-hooks": "error",
