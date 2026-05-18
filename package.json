@@ -1,6 +1,6 @@
 {
 	"name": "@cmdniels/eslint-config",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"private": false,
 	"description": "Opinionated ESLint configs for TypeScript and web (React/Next.js/Tailwind) projects",
 	"keywords": [
@@ -22,6 +22,7 @@
 		"./eslint/expo": "./eslint/expo.eslint.config.mjs",
 		"./prettier": "./prettier.config.mjs",
 		"./rules/default": "./rules/default.md",
+		"./rules/spacetimedb": "./rules/spacetimedb.md",
 		"./rules/ts": "./rules/ts.md",
 		"./rules/web": "./rules/web.md",
 		"./rules/expo": "./rules/expo.md"
@@ -31,7 +32,7 @@
 		"eslint/web.eslint.config.mjs",
 		"eslint/expo.eslint.config.mjs",
 		"prettier.config.mjs",
-		"rules/default.md",
+		"rules/spacetimedb.md",
 		"rules/ts.md",
 		"rules/web.md",
 		"rules/expo.md"
