@@ -10,7 +10,6 @@
 - Never include multiple exports in a file
 - Enforce a single function per file
 - Reusable types should be placed as default exports inside of @/types
-- Constants should always be placed in @/lib/constants.ts
 - For console apps with state use @/lib/state.ts with a object default export
 - Enforce a single IType per IType.ts in @/types
 - Dont use or create a @/src directory use @/lib
