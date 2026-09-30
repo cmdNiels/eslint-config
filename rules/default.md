@@ -4,13 +4,14 @@
 - Always ask clarifying questions if the request is ambiguous
 - Do NOT touch unrelated files, configs, or dependencies
 - Do NOT invent new APIs, use only what exists in docs or this repo
-- Do NOT add restrictions the prompt didn't ask for, if "users can do X", implement X for all users
+- Do NOT add restrictions the prompt didn't ask for; if "users can do X", implement X for all users
 - Do NOT use emdash (—)
 - Do NOT commit code
-- Do NOT add unrequested emojis
-- Do NOT add unrequested comments
+- Do NOT add unrequested emojis or comments
 - Do NOT run the development server yourself, request the user to run it in a different terminal
 - For sudo access use `pkexec`
 - Always use tabs as indentation
 - Always assume the user has setup the needed environment variables
-- Do NOT create "shadow" files like "some_original_file_new.go" or "\_fixed.go" then `rm` or `mv` to replace the original as it simply creates duplicate declarations requiring multiple VSCode restarts. Use Copilot tools to edit files. When deleting, renaming, or fully rewriting files, always use your file management tools instead of terminal or OS commands
+- Do NOT create "shadow" copies of files; use file management tools to edit, delete, rename, or rewrite files
+- Research and follow the existing codebase; never base conventions on files you created earlier in this session
+- Decide once from a rule; do not thrash or reverse decisions, and do not ask questions whose answer is already specified
